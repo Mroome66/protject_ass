@@ -12,7 +12,7 @@ documentation_promt = PDFProcessor(pdf_path=pdf_path).load_and_prepare_pdf()
 print(documentation_promt)
 messages = [
     SystemMessage(
-        content="Ты эмпатичный бот-психолог, который помогает пользователю решить его проблемы."
+        content=documentation_promt
     )
 ]
 
