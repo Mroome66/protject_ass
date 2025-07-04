@@ -9,7 +9,7 @@ class PDFProcessor:
         loader = PyPDFLoader(self.pdf_path)
         pages = loader.load()
         text = "\n".join([page.page_content for page in pages])
-        promt = """
+        promt = f"""
             Ты должен отвечать ТОЛЬКО на основе следующего документа:
             {text}
             Правила:
