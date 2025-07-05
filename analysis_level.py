@@ -1,7 +1,8 @@
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_gigachat import GigaChat
+from Custom_GigaChat import LogGigaChat
 
-def det_user_level(giga: GigaChat) -> str:
+def det_user_level(giga: LogGigaChat) -> str:
     level_promt = """Твоя задача определить уровень знаний пользователя. Ты должен проанализировать ответ пользователя и дать ОДИН ОТВЕТ В ОДНО СЛОВО! Вотдва варианта и критерии для каждого из них:
     1. "Новичок" - если пользователь говорит что не имеет большого опыта и не уверен в своих знаниях
     2. "Профи" - если пользователь говорит что опытен и разбирается в теме
