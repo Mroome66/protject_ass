@@ -63,3 +63,5 @@ htmlcov/
 
 # Log files
 *.log
+
+log.txt
